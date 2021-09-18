@@ -72,8 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
     }).toList();
   }
 
-  void _addNewTransaction(
-      String txTitle, double txAmount, DateTime chosenDate) {
+  void _addNewTransaction(String txTitle, num txAmount, DateTime chosenDate) {
     final newTx = Transaction(
       title: txTitle,
       amount: txAmount,
@@ -110,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Personal Expenses',
+          'Personal Expenses app',
         ),
         actions: <Widget>[
           IconButton(
